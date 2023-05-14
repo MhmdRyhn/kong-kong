@@ -1,0 +1,15 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+- name: example_service
+  url: http://172.17.0.1:1100/hello
+  # url: /hello
+  # protocol: http
+  # host: 172.17.0.1 # Docker host IP for default network
+  # port: 8080
+  routes:
+  - name: example_route
+    paths:
+    - /hello
+    strip_path: true
