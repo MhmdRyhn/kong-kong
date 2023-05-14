@@ -1,0 +1,106 @@
+{
+    "editor.fontSize": 16,
+    "editor.mouseWheelZoom": true,
+    "editor.multiCursorModifier": "alt",  // Other options: "ctrlCmd"
+    "editor.rulers": [
+        120
+    ],
+
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,  // "files.autoSave" must be "afterDelay"
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    "git.branchProtection": ["master", "main", "stable"],
+    "git.terminalGitEditor": false,
+
+    "go.lintOnSave": "file",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+
+    // "Todo Tree" extension must be installed
+    // "todo-tree.regex.regex": "(//)\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
+    "todo-tree.regex.regex": "(//)\\s*($TAGS).*(\\n\\s*//\\s{1,}.*)*",
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "text-and-comment",
+        "foreground": "black",
+        "background": "white",
+        "opacity": 50,
+        "iconColour": "blue",
+        "gutterIcon": true,
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "foreground": "black",
+            "background": "white",
+            "iconColour": "white",
+        },
+        "NOTE": {
+            "icon": "note",
+            "foreground": "white",
+            "background": "gray",
+            "iconColour": "gray",
+        },
+        "COMMENT": {
+            "icon": "note",
+            "foreground": "white",
+            "background": "gray",
+            "iconColour": "gray",
+        },
+        "FIXME": {
+            "foreground": "black",
+            "background": "yellow",
+            "iconColour": "yellow",
+        },
+        "BUG": {
+            "foreground": "black",
+            "background": "red",
+            "iconColour": "red",
+        },
+        "DEPRECATED": {
+            "foreground": "black",
+            "background": "red",
+            "iconColour": "red",
+        },
+        "[ ]": {
+            "icon": "check",
+            "foreground": "black",
+            "background": "white",
+            "iconColour": "yellow",
+        },
+        "[x]": {
+            "icon": "check",
+            "foreground": "white",
+            "background": "green",
+            "iconColour": "green",
+        }
+    },
+    "todo-tree.general.tags": [
+        "BUG",
+        "DEPRECATED",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "NOTE",
+        "COMMENT",
+        "[ ]",
+        "[x]"
+    ],
+
+    "window.autoDetectColorScheme": true,
+    "workbench.tree.indent": 25,
+    "workbench.colorTheme": "Solarized Dark",  // "window.autoDetectColorScheme" must be enabled
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "openapi.tryit.insecureSslHostnames": [
+        "localhost"
+    ], // "window.autoDetectColorScheme" must be enabled
+}
